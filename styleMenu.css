@@ -16,23 +16,21 @@ body {
 .content {
     width: 100%;
     background-color: transparent;
-    border: 2px solid rgba(7, 55, 137, 0.485);
+    /* border: 2px solid rgba(7, 55, 137, 0.485); */
+    border: 1px solid #004c7b;
     backdrop-filter: blur(10px);
     color: #fff;
     border-radius: 12px;
     padding: 10px !important;
     margin-top: 1%;
-}
-
-.menus {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    box-shadow: 0 0 20px rgba(236, 250, 255, 0.489);
 }
 
 .card {
     height: 15vh !important;
-    background-color: rgba(7, 57, 132, 0.463) !important;
+    background-color:#ffffff5a !important;
     border: 2px solid rgba(7, 55, 137, 0.485);
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.289);
+    padding: 20px;
 }
