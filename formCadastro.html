@@ -11,75 +11,73 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="content">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+      <div class="contentNav">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html">Início</a>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cadastros
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                </div>
-            </nav>
-        </div>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="formCadastro.html">Profissional</a></li>
+                    <li><a class="dropdown-item" href="#">Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Especialidade</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agenda.html">Agenda</a>
+            </li>
+        </ul>
+    </div>
         <div class="contentMain">
             <div class="row">
                 <h3 class="col-md-12">
-                    <i class="bi bi-house-door-fill"></i><b> CADASTRO DE PROFISSIONAL</b>
+                  <i class='bx bxs-user-badge'></i><b> Cadastro de Profissional</b>
                 </h3>
+                <hr />
             </div> <br>
-            
-            <form action="#" method="post">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label for="nome" class="form-label">Nome completo:</label>
-                      <input type="text" class="form-control" id="nome" required>
-                    </div>
-                    <div class="col-md-5 mb-3">
-                      <label for="endereco" class="form-label">Endereco: </label>
-                      <input type="text" class="form-control" id="endereco" required>
-                    </div>
-                    <div class="col-md-1 mb-3">
-                        <label for="numero" class="form-label">N°: </label>
-                        <input type="number" class="form-control" id="numero">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <label for="cpf" class="form-label">CPF: </label>
-                      <input type="text" class="form-control" id="cpf" required>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <label for="ufConselho" class="form-label">UF Conselho: </label>
-                        <select id="ufConselho" class="form-select">
-                            <option selected>CE</option>
-                        </select>
+            <div class="formCadastro">
+              <form action="#" method="post">
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label">Nome completo:</label>
+                        <input type="text" class="form-control" id="nome" required>
                       </div>
-                    <div class="col-md-3 mb-4">
-                        <label for="numeroConselho" class="form-label">N° Conselho: </label>
-                        <input type="number" class="form-control" id="numeroConselho" required>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-success"><b>Salvar</b></button>
-            </form>
-            <footer class="text-center mt-5 fixed-bottom"><h5>Core Software ©</h5></footer>
+                      <div class="col-md-5 mb-3">
+                        <label for="endereco" class="form-label">Endereco: </label>
+                        <input type="text" class="form-control" id="endereco" required>
+                      </div>
+                      <div class="col-md-1 mb-3">
+                          <label for="numero" class="form-label">N°: </label>
+                          <input type="number" class="form-control" id="numero">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="cpf" class="form-label">CPF: </label>
+                        <input type="text" class="form-control" id="cpf" required>
+                      </div>
+                      <div class="col-md-2 mb-3">
+                          <label for="ufConselho" class="form-label">UF Conselho: </label>
+                          <select id="ufConselho" class="form-select">
+                              <option selected>CE</option>
+                          </select>
+                      </div>
+                      <div class="col-md-3 mb-4">
+                          <label for="numeroConselho" class="form-label">N° Conselho: </label>
+                          <input type="number" class="form-control" id="numeroConselho" required>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-success"><b>Salvar</b></button>
+              </form>
+            </div>
+            <footer class="text-center mt-5 fixed-bottom"><h6>Core Software ©</h6></footer>
         </div>
     </div>
 </body>

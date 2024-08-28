@@ -10,16 +10,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(bg2.png) no-repeat;
+    background: url(bgatual.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .wrapper {
     width: 420px;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background: radial-gradient(circle, #cfcfcfac, #e9edf9);
     border: 2px solid rgba(7, 55, 137, 0.485);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(px);
     color: #fff;
     border-radius: 12px;
     padding: 25px 30px;
